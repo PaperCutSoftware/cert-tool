@@ -1,0 +1,28 @@
+{
+  "name": "cert-tool",
+  "version": "1.0.1",
+  "description": "A tool for generating self-signed certificates",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '*.js' --fix",
+    "format": "prettier-eslint '*.{js,json}' --write"
+  },
+  "author": "PaperCut Software",
+  "license": "ISC",
+  "bin": {
+    "cert-tool": "./main.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "node-forge": "^0.9.0",
+    "yargs": "^14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier-eslint-cli": "^5.0.0"
+  }
+}
