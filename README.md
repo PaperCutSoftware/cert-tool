@@ -8,6 +8,6 @@ This tool requires nodejs and npm, which can be downloaded [here](https://www.np
 
 Run: **npm i -g**
 
-Then run cert-tools --help to find an overview of how to use the tool and all valid parameters
+Then run cert-tool --help to find an overview of how to use the tool and all valid parameters
 
 You can find more information in this [wiki entry](https://docs.google.com/document/d/14xHup9IipXL6X6XTzle0NHcF1AqSq_N2P3AXaQNZWNs/edit).
