@@ -138,7 +138,6 @@ altNames.push(
   }
 );
 // Use provided ip
-console.log(options);
 if (options.ip) {
   altNames.push({
     type: 7, // IP
