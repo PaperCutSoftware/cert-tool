@@ -146,7 +146,6 @@ if (options.ip) {
   // Determine external IP and use that
 } else {
   if (options.ip === "") {
-    console.log(getLocalExternalIP());
     altNames.push({
       type: 7, // IP
       ip: getLocalExternalIP()
@@ -169,7 +168,7 @@ cert.setExtensions([
 // self-sign certificate
 cert.sign(keys.privateKey);
 console.log("Certificate created.");
-console.log(cert.getExtension("subjectAltName"));
+
 // Use sync because we need this directory before we do anything
 if (!fs.existsSync(`${process.cwd()}/certificates`)) {
   fs.mkdirSync(`${process.cwd()}/certificates`);
