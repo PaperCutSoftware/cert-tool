@@ -10,4 +10,4 @@ Run: **npm i -g**
 
 Then run cert-tool --help to find an overview of how to use the tool and all valid parameters
 
-You can find more information in this [wiki entry](https://github.com/PaperCutSoftware/cert-tool/wiki/Getting-Started-with-Cert-Tool).
+You can find more information in this [wiki entry](https://github.com/PaperCutSoftware/cert-tool/wiki/).
