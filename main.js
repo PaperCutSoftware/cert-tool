@@ -18,7 +18,7 @@ const { networkInterfaces } = require("os");
 // Yargs declaration for handling command-line arguments
 const options = yargs
   .usage(
-    `cert-tool v${packageJson.version}\nUsage: cert-tool -t <certficiate type>`
+    `cert-tool v${packageJson.version}\nUsage: cert-tool -t <certificate type>`
   )
   .option("f", {
     alias: "file",
