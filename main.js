@@ -63,7 +63,7 @@ const options = yargs
     if (argv.type.toLowerCase() === "pfx") {
       if (argv.combined) {
         throw new Error("Cannot use combine flag on PFX certificate");
-      } else if ( argv.password === undefined || argv.password.length == 0) {
+      } else if ( ! argv.password ) {
         throw new Error("Please enter a valid password for PFX certificate");
       }
     }
