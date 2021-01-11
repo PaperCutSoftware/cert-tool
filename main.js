@@ -59,12 +59,12 @@ const options = yargs
     describe: "Sets the hostname of the subject alternate name",
     type: "string"
   })
-  .check(function(argsv) {
-    if (argsv.type === "pfx") {
-      if (argsv.combined) {
-        throw new Error("Cannot use combine flag on PFX type certificate");
-      } else if (argsv.password == null || argsv.password.length == 0) {
-        throw new Error("Please enter a valid password for this certificate");
+  .check(function(argv, options) {
+    if (argv.type.toLowerCase() === "pfx") {
+      if (argv.combined) {
+        throw new Error("Cannot use combine flag on PFX certificate");
+      } else if ( ! argv.password ) {
+        throw new Error("Please enter a valid password for PFX certificate");
       }
     }
     return true;
